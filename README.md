@@ -14,12 +14,12 @@ These instructions will get you a copy of the project up and running on your loc
 * Docker-compose (because it doesn't come pre-installed with docker)
 
 ### INSTALLING
-* RHEL8 can be installed as an iso image and then be set up as a new virtual machine using any virtualisation tool like Oracle VirtualBox.
+* RHEL8 can be installed as an ISO image and then be set up as a new virtual machine using any virtualisation tool like Oracle VirtualBox.
 * Run the following command to install Docker-Community Edition
 ```
 # cd /etc/yum.repos.d/
 ```
--> now inside this folder create a .repo file and inside it wirte the following:
+-> now inside this folder create a .repo file and inside it write the following:
 ```
 [docker]
 baseurl = https://download.docker.com/linux/centos/7/x86_64/stable/
@@ -37,7 +37,7 @@ gpgcheck=0
 # chmod +x /usr/local/bin/docker-compose
 ```
 ### FINAL STEP
-Now just get the yml file into your local machine and run the command:
+Now just get the docker-compose.yml file into your local machine and run the command:
 ```
 # docker-compose up
 ```
@@ -55,7 +55,7 @@ Go to your browser, get yourself registered in my database and start your CTF. T
 
 ### FEATURES
 * The storage where the web pages are loaded and the database is stored is Persistant and not Ephemeral.
-* This means that any container if gets corrupted by chance the data is never lost.
+* This means that any container if gets corrupted by chance, THE DATA IS NEVER LOST.
 * Simply just attach the volume to a new container.
 * This Container provides you the luxury to host a docker container with just 1 click and also terminate and wipe off everything without even loosing the data.
 
