@@ -1,0 +1,24 @@
+services:
+  sqldb:
+    environment:
+      MYSQL_DATABASE: mydb
+      MYSQL_ROOT_PASSWORD: redhat
+    image: mysql:5.7
+    restart: always
+    volumes:
+    - dbstorage:/var/lib/mysql:rw
+  webctf:
+    tty: true
+    stdin_open: true
+    depends_on:
+    - sqldb
+    image: dakshjain09/ctfcontainer:v1
+    restart: always
+    ports:
+    - 8080:80/tcp
+    volumes:
+    - ctfdocs:/var/www/html:rw
+version: '3.0'
+volumes:
+  ctfdocs: {}
+  dbstorage: {}
