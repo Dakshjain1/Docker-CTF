@@ -54,12 +54,12 @@ So after using docker-compose up go to another terminal and run the following co
 ```
 
 Go to your browser, get yourself registered in my database and start your CTF. This is just a prototype and more advance features can be added to it.
-# 1. To connect on the same OS:
+# 1. To connect on the same machine:
 ```
 Write the IP of ctfweb container in the browser. 
 Example-> 172.19.0.3
 ```
-# 2. To connect from another OS that is on the same network
+# 2. To connect from another machine that is on the same network
 ```
 Find the IP of the host machine using ifconfig command.
 And then in the browser write IP of host machine : port.
