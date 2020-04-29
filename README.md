@@ -75,6 +75,7 @@ Example-> 192.168.0.108:8080
   * Has net-tools for basic features like netstat for port numbers and ifconfig for IP
   * Has httpd for hosting apache web server
 * Another image of mysql:5.7 to store the data in the databse.
+* The link to the docker image is: https://hub.docker.com/r/dakshjain09/ctfcontainer
 
 ### FEATURES
 * The storage/volume where the 'web pages are loaded' and the 'database is stored' is Persistant and not Ephemeral.
